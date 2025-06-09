@@ -7,8 +7,8 @@ class Obsidian():
             self, 
             api_key: str,
             protocol: str = 'https',
-            host: str,
-            port: int,
+            host: str = 127.0.0.1,
+            port: int = 27124,
             verify_ssl: bool = False,
         ):
         self.api_key = api_key
