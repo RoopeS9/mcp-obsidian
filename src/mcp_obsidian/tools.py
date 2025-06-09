@@ -22,7 +22,7 @@ TOOL_LIST_FILES_IN_DIR = "obsidian_list_files_in_dir"
 
 class ToolHandler():
     def __init__(self, tool_name: str):
-        self.name = f"{prefix}_tool_name"
+        self.name = f"{prefix}_{tool_name}"
 
     def get_tool_description(self) -> Tool:
         raise NotImplementedError()
