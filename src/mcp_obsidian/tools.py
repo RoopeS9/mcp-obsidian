@@ -12,6 +12,7 @@ from . import obsidian
 api_key = os.getenv("OBSIDIAN_API_KEY", "")
 obsidian_host = os.getenv("OBSIDIAN_HOST", "127.0.0.1")
 obsidian_port = os.getenv("OBSIDIAN_PORT", "27124")
+prefix = os.getenv("MCP_PREFIX", "")
 
 if api_key == "":
     raise ValueError(f"OBSIDIAN_API_KEY environment variable required. Working directory: {os.getcwd()}")
@@ -21,7 +22,7 @@ TOOL_LIST_FILES_IN_DIR = "obsidian_list_files_in_dir"
 
 class ToolHandler():
     def __init__(self, tool_name: str):
-        self.name = tool_name
+        self.name = f"{prefix}_tool_name"
 
     def get_tool_description(self) -> Tool:
         raise NotImplementedError()
