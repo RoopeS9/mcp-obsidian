@@ -1,8 +1,15 @@
-# MCP server for Obsidian
+# MCP server for Obsidian – Modified for usability.
 
 MCP server to interact with Obsidian via the Local REST API community plugin.
 
 <a href="https://glama.ai/mcp/servers/3wko1bhuek"><img width="380" height="200" src="https://glama.ai/mcp/servers/3wko1bhuek/badge" alt="server for Obsidian MCP server" /></a>
+
+
+
+## Modifications
+- MCP_PREFIX environment variable for differentiating between vaults.
+- OBSIDIAN_PORT environment variable for again, having different vaults with the same code.
+- Both are used through Claude's configuration json.
 
 ## Components
 
